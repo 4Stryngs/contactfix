@@ -1,0 +1,20 @@
+/* 
+  Localizable.strings
+  ContactFixEC
+
+  Created by Jorge Tapia on 8/26/13.
+  Copyright (c) 2013 Mindshake Interactive. All rights reserved.
+*/
+
+"BRAZIL" = "Brasil";
+"ECUADOR" = "Equador";
+"UPDATE" = "Atualização";
+"ACCEPT" = "Aceitar";
+"CANCEL" = "Cancelar";
+"ERROR" = "Falha";
+"CONFIRM_TEXT" = "Quer atualizar seus números de celulares para o novo formato?";
+"SUCCESS" = "Seus contatos foram atualizados corretamente.";
+"NO_MODS" = "Não há números detectáveis ​​para atualizar.";
+"FAILURE" = "Falhou. Seus contatos não foram modificados.";
+"NO_PERMISSIONS" = "Por favor, dar as permissões necessárias para acessar os seus contatos. Para fazer isso, vá para Settings >> Privacy >> Contacts e ativar. Seus contatos não foram modificados.";
+"TWITTER_SHARE" = "http://twitter.com/intent/tweet?text=Usando%20%23ContactFix%20para%20atualizar%20mis%20contactos&via=MindshakeStudio&url=http%3A%2F%2Fitunes.com%2Fapps%2FContactFixEC";

@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="hcY-uI-X70">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller - Elige tu país-->
+        <scene sceneID="5">
+            <objects>
+                <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xpc-RH-kcd">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="131" id="djn-Bn-Ds8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" image="brasil.jpg">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="brasilAction:" destination="2" eventType="touchUpInside" id="QbB-Y9-3IE"/>
+                                    <segue destination="zu0-co-1qG" kind="push" identifier="segueBrasil" id="Lzx-wp-xnK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AM1-sl-vcn">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="77" id="HR3-ZY-mwz"/>
+                                    <constraint firstAttribute="width" constant="131" id="i3f-1L-OkA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Button" image="ecuador.jpg">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="ecuadorAction:" destination="2" eventType="touchUpInside" id="ail-Qa-0S2"/>
+                                    <segue destination="zu0-co-1qG" kind="push" identifier="segueEcuador" id="N7j-Xt-HVU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t8d-rF-Etd">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="63" id="3Wj-u2-FCW"/>
+                                    <constraint firstAttribute="width" constant="254" id="NJd-fq-7pR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" image="mindshake_header.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="mindshakeAction:" destination="2" eventType="touchUpInside" id="k1n-HK-dMz"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="266" translatesAutoresizingMaskIntoConstraints="NO" id="MJA-Ba-abC">
+                                <string key="text">Bienvenido a ContactFix. Elige tu país para continuar con el proceso de actualización de la agenda de contactos al nuevo formato de números celulares en tu territorio.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="THE MOBILE APPLICATIONS EXPERTS" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="efz-kl-PjZ">
+                                <fontDescription key="fontDescription" name="AvenirNextCondensed-Bold" family="Avenir Next Condensed" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.75294117647058822" green="0.31764705882352939" blue="0.1764705882352941" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="MJA-Ba-abC" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="3IF-FA-YY5"/>
+                            <constraint firstItem="efz-kl-PjZ" firstAttribute="top" secondItem="t8d-rF-Etd" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="APt-64-dUh"/>
+                            <constraint firstItem="MJA-Ba-abC" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="HSK-hS-fJ5"/>
+                            <constraint firstItem="xpc-RH-kcd" firstAttribute="bottom" secondItem="AM1-sl-vcn" secondAttribute="bottom" type="default" id="L1g-eb-BtD"/>
+                            <constraint firstItem="xpc-RH-kcd" firstAttribute="top" secondItem="AM1-sl-vcn" secondAttribute="top" type="default" id="TFP-lA-78P"/>
+                            <constraint firstAttribute="trailing" secondItem="xpc-RH-kcd" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="fjr-5B-QNx"/>
+                            <constraint firstItem="AM1-sl-vcn" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="fuG-9w-RJU"/>
+                            <constraint firstItem="AM1-sl-vcn" firstAttribute="top" secondItem="3" secondAttribute="top" constant="169" id="jWI-oC-BaI"/>
+                            <constraint firstItem="efz-kl-PjZ" firstAttribute="centerX" secondItem="t8d-rF-Etd" secondAttribute="centerX" type="default" id="otQ-Sq-TTm"/>
+                            <constraint firstItem="efz-kl-PjZ" firstAttribute="centerX" secondItem="3" secondAttribute="centerX" type="default" id="wBn-K8-Pt6"/>
+                            <constraint firstItem="t8d-rF-Etd" firstAttribute="top" secondItem="3" secondAttribute="top" constant="20" symbolic="YES" type="default" id="xSv-JV-Vg2"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Elige tu país" id="9GC-ZT-Fc7"/>
+                    <connections>
+                        <outlet property="brasilButton" destination="xpc-RH-kcd" id="xMl-nP-CNO"/>
+                        <outlet property="ecuadorButton" destination="AM1-sl-vcn" id="fFF-Ax-d85"/>
+                        <outlet property="mindshakeButton" destination="t8d-rF-Etd" id="oWf-km-hjG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="946" y="118"/>
+        </scene>
+        <!--Main View Controller - Nombre del país-->
+        <scene sceneID="yuO-l1-imd">
+            <objects>
+                <viewController id="zu0-co-1qG" customClass="MainViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bvL-6W-HRO">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4lV-09-eOO">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="63" id="Pe3-U7-14y"/>
+                                    <constraint firstAttribute="width" constant="254" id="zDm-bQ-oNM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" image="mindshake_header.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="mindshakeAction:" destination="zu0-co-1qG" eventType="touchUpInside" id="yP4-sK-J9z"/>
+                                </connections>
+                            </button>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="blackOpaque" translatesAutoresizingMaskIntoConstraints="NO" id="hWu-ld-OYe">
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="9I4-u6-Vp9"/>
+                                    <barButtonItem title="Actualizar Contactos" id="Oqv-Ub-yGL">
+                                        <connections>
+                                            <action selector="actualizarAction:" destination="zu0-co-1qG" id="plW-O7-LV8"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="IhI-3k-aww"/>
+                                </items>
+                            </toolbar>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Utiliza esta aplicación para actualizar los números celulares de tu agenda de contactos al nuevo formato." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="d0q-VT-g8h">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="84" id="zoG-VJ-yNx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Comparte con tus amigos en las principales redes sociales." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="udF-Dx-6BE">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="utn-52-eJE">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" image="facebook.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="facebookAction:" destination="zu0-co-1qG" eventType="touchUpInside" id="Sw6-d5-NeS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5dg-vA-W8F">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" image="twitter.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="twitterAction:" destination="zu0-co-1qG" eventType="touchUpInside" id="pRn-FK-6b9"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="THE MOBILE APPLICATIONS EXPERTS" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CYe-9J-h0Q">
+                                <fontDescription key="fontDescription" name="AvenirNextCondensed-Bold" family="Avenir Next Condensed" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.75294117650000003" green="0.31764705879999999" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="udF-Dx-6BE" firstAttribute="top" secondItem="d0q-VT-g8h" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="114-eq-dfv"/>
+                            <constraint firstAttribute="bottom" secondItem="utn-52-eJE" secondAttribute="bottom" constant="86" id="6zq-7n-2T5"/>
+                            <constraint firstItem="udF-Dx-6BE" firstAttribute="leading" secondItem="bvL-6W-HRO" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="8KY-Nb-aEu"/>
+                            <constraint firstItem="d0q-VT-g8h" firstAttribute="leading" secondItem="bvL-6W-HRO" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="JpZ-Zp-Wdt"/>
+                            <constraint firstItem="hWu-ld-OYe" firstAttribute="leading" secondItem="bvL-6W-HRO" secondAttribute="leading" type="default" id="Mk5-Os-z80"/>
+                            <constraint firstAttribute="trailing" secondItem="5dg-vA-W8F" secondAttribute="trailing" constant="100" id="NhU-2f-FrN"/>
+                            <constraint firstItem="d0q-VT-g8h" firstAttribute="top" secondItem="bvL-6W-HRO" secondAttribute="top" constant="123" id="PUN-Ea-mak"/>
+                            <constraint firstItem="hWu-ld-OYe" firstAttribute="trailing" secondItem="bvL-6W-HRO" secondAttribute="trailing" type="default" id="QGM-Qg-hSu"/>
+                            <constraint firstItem="5dg-vA-W8F" firstAttribute="top" secondItem="utn-52-eJE" secondAttribute="top" type="default" id="aFk-mn-4Fe"/>
+                            <constraint firstItem="4lV-09-eOO" firstAttribute="top" secondItem="bvL-6W-HRO" secondAttribute="top" constant="20" symbolic="YES" type="default" id="bkn-ce-AmL"/>
+                            <constraint firstItem="CYe-9J-h0Q" firstAttribute="top" secondItem="4lV-09-eOO" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="fyA-Ks-dUZ"/>
+                            <constraint firstItem="4lV-09-eOO" firstAttribute="leading" secondItem="bvL-6W-HRO" secondAttribute="leading" constant="32" id="lk5-pj-rLs"/>
+                            <constraint firstAttribute="trailing" secondItem="udF-Dx-6BE" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="o9h-y9-6cC"/>
+                            <constraint firstItem="CYe-9J-h0Q" firstAttribute="centerX" secondItem="4lV-09-eOO" secondAttribute="centerX" type="default" id="pxe-8t-w8b"/>
+                            <constraint firstItem="hWu-ld-OYe" firstAttribute="bottom" secondItem="bvL-6W-HRO" secondAttribute="bottom" type="default" id="q5U-ct-Xd7"/>
+                            <constraint firstItem="utn-52-eJE" firstAttribute="leading" secondItem="bvL-6W-HRO" secondAttribute="leading" constant="98" id="u0a-gk-HeH"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Nombre del país" id="vlN-GZ-Mwy"/>
+                    <connections>
+                        <outlet property="actualizarButton" destination="Oqv-Ub-yGL" id="pRU-MX-gUN"/>
+                        <outlet property="facebookButton" destination="utn-52-eJE" id="drN-Uf-ihO"/>
+                        <outlet property="mindshakeButton" destination="4lV-09-eOO" id="MSs-Mq-TeT"/>
+                        <outlet property="twitterButton" destination="5dg-vA-W8F" id="YoF-fE-FSZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MTp-IV-U18" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1423" y="118"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="4D0-1O-adb">
+            <objects>
+                <navigationController id="hcY-uI-X70" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackTranslucent"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="blackOpaque" id="J1V-mu-H1v">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="2" kind="relationship" relationship="rootViewController" id="rhU-fz-Kfz"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sPE-fv-JHQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="497" y="118"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="brasil.jpg" width="1920" height="1200"/>
+        <image name="ecuador.jpg" width="1440" height="900"/>
+        <image name="facebook.png" width="44" height="44"/>
+        <image name="mindshake_header.png" width="450" height="113"/>
+        <image name="twitter.png" width="44" height="44"/>
+    </resources>
+    <classes>
+        <class className="MainViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MainViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="actualizarAction:"/>
+                <relationship kind="action" name="facebookAction:"/>
+                <relationship kind="action" name="mindshakeAction:"/>
+                <relationship kind="action" name="twitterAction:"/>
+                <relationship kind="outlet" name="actualizarButton" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="facebookButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="mindshakeButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="twitterButton" candidateClass="UIButton"/>
+            </relationships>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="brasilAction:"/>
+                <relationship kind="action" name="ecuadorAction:"/>
+                <relationship kind="action" name="mindshakeAction:"/>
+                <relationship kind="outlet" name="brasilButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="ecuadorButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="mindshakeButton" candidateClass="UIButton"/>
+            </relationships>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="N7j-Xt-HVU"/>
+    </inferredMetricsTieBreakers>
+</document>

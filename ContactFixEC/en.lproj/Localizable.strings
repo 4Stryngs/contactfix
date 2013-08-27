@@ -1,0 +1,20 @@
+/* 
+  Localizable.strings
+  ContactFixEC
+
+  Created by Jorge Tapia on 8/26/13.
+  Copyright (c) 2013 Mindshake Interactive. All rights reserved.
+*/
+
+"BRAZIL" = "Brazil";
+"ECUADOR" = "Ecuador";
+"UPDATE" = "Update Contacts";
+"ACCEPT" = "Accept";
+"CANCEL" = "Cancel";
+"ERROR" = "Error";
+"CONFIRM_TEXT" = "Do you want to update your contacts' mobile numbers to the new format?";
+"SUCCESS" = "Your contacts have been updated correctly.";
+"NO_MODS" = "No contacts detected to update.";
+"FAILURE" = "An error has occurred. Your contacts have not been modified.";
+"NO_PERMISSIONS" = "Please give the necessary permissions to access your contacts. To do this go to Settings >> Privacy >> Contacts and activate ContactFixEC. Your contacts have not been modified.";
+"TWITTER_SHARE" = "http://twitter.com/intent/tweet?text=Using%20%23ContactFix%20to%20update%20my%20contacts&via=MindshakeStudio&url=http%3A%2F%2Fitunes.com%2Fapps%2FContactFixEC";
